@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("img/beer.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.login-container {
+  width: 50%;
+  /* height: 450px; */
+  /* border: 2px solid yellow; */
+  position: absolute;
+  right: 0px;
+  margin-top: 150px;
+}
+
+form {
+  width: 70%;
+  height: 100%;
+  /* background-color: red; */
+  margin: auto;
+  font-family: "Sansita Swashed", cursive;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: aquamarine; */
+}
+.lbltext {
+  display: block;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 10px yellow;
+  /* text-align: center; */
+}
+.inputxt {
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
+  margin: 0px auto;
+  border-radius: 5px;
+  border: 4px lightseagreen solid;
+  background-color: ivory;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 30px;
+}
+#boton {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+  background-color: transparent;
+  opacity: 0.7;
+  color: white;
+  font-family: "Miriam Libre", sans-serif;
+  border: none;
+}
+#boton:hover {
+  color: crimson;
+  box-shadow: 0px 0px 5px white inset;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  box-shadow: 0px 0px 30px yellow;
+}
+.leftside {
+  /* width: 70%; */
+  /* border: 1px solid blue; */
+  padding: 0px 10px;
+}
+.rightside {
+  /* border: 1px solid lightgreen; */
+  margin: auto;
+  padding: 0px 10px;
+  /* width: 30%; */
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .inputxt,
+  .lbltext {
+    font-size: 18px;
+  }
+  form {
+    flex-direction: column;
+    width: 80%;
+  }
+  .leftside {
+    order: 2;
+  }
+  .rightside {
+    order: 1;
+  }
+  .inputxt {
+    width: 100%;
+  }
+}
