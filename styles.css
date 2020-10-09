@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: inherit;
 }
 
 .login-container {
@@ -42,13 +43,17 @@ form {
   padding: 5px;
   margin: 0px auto;
   border-radius: 5px;
-  border: 4px lightseagreen solid;
+  border: 3px lightseagreen solid;
   background-color: ivory;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   margin-bottom: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.inputxt::placeholder {
+  color: #444;
 }
 #boton {
   display: block;
@@ -59,10 +64,15 @@ form {
   color: white;
   font-family: "Miriam Libre", sans-serif;
   border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 #boton:hover {
   color: crimson;
-  box-shadow: 0px 0px 5px white inset;
+  box-shadow: 0px 0px 30px burlywood;
 }
 img {
   width: 200px;
@@ -73,6 +83,7 @@ img {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   box-shadow: 0px 0px 30px yellow;
+  margin-bottom: 50px;
 }
 .leftside {
   /* width: 70%; */
@@ -88,12 +99,8 @@ img {
 
 @media only screen and (max-width: 1200px) {
   .login-container {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
-  }
-  .inputxt,
-  .lbltext {
-    font-size: 18px;
   }
   form {
     flex-direction: column;
@@ -107,5 +114,9 @@ img {
   }
   .inputxt {
     width: 100%;
+  }
+  body {
+    background-attachment: fixed;
+    background-position: 75% 50%;
   }
 }
